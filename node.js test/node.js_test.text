@@ -4,14 +4,14 @@
 metadata (data on) on the node js project. author, description, version and so
 scripts: short commands to ease long syntax for the developer
 dependecies: all the npm modules and libraries that are required for the project
-act as entry point for for the npm to fetch the modules
+act as entry points for for the npm to fetch the modules
 dev-dependencies: the npm modules and libraries that are only required for the
 developer and are not relevant once the project is out.
 
 3.npm i something
 npm i -g something 
 global installation should be used when the module is relevant for every project you will create 
-or tools that helps you develop it
+or tools that helps you develop.
 
 
 4. callbacks: gives a function another function as an argument and invoking it
@@ -29,7 +29,7 @@ its non blocking since it doesnt block the stack and let other code run while it
 the thingies i mentioned above which use something called web api, which is a tool provided by the browser.
 when certain processes are being called, like settimeout or interval they are being pushed to the 
 web api and once ready - onto the task queue. The event loop continuously checks the task queue and the stack. if the stack is empty,
-it pushes the first task on the task queue to it. the event loop is necessary for asyncronous programming.
+it pushes the first task in the task queue to it. the event loop is necessary for asyncronous programming.
 
 6. hello
 hello
@@ -49,7 +49,7 @@ second: waits another 2 seconds then subtracting the current time in ms from the
 again which would result in printing 3000 seconds.
 
 11. the code itself is fine, itll add the p to the div but danni ran the file itself instead of opening a server
-hell get something like dom not found cause hes trying to load to a window.onload on a window that doesnt exist
+he'll get something like dom not found cause hes trying to load to a window.onload on a window that doesnt exist
 
 
 13. you should use event emitter when handling user i/o, would like to ctreate custom events or use 
@@ -67,7 +67,7 @@ c. built in modules like event emitter ad first
 
 16. a child process is a subprocess of another process that acts indepandently of the parent process.
 it is used for several things like parallel executions, running exterior programs or shell commands.
-you communicate with a child process data stream stdout, err, in or with messaging events with on and send.
+you communicate with a child process via data streams like stdout, err, in or with messaging events with .on and .send.
 there are 4 ways to create a child process: exec, execFile, fork, spawn
 exec: used for small shell commands.
 execFile: executes a fule or a script without invoking the shell
