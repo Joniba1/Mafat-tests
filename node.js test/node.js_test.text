@@ -1,0 +1,75 @@
+1. a
+
+2. package json contains four main things:
+metadata (data on) on the node js project. author, description, version and so
+scripts: short commands to ease long syntax for the developer
+dependecies: all the npm modules and libraries that are required for the project
+act as entry point for for the npm to fetch the modules
+dev-dependencies: the npm modules and libraries that are only required for the
+developer and are not relevant once the project is out.
+
+3.npm i something
+npm i -g something 
+global installation should be used when the module is relevant for every project you will create 
+or tools that helps you develop it
+
+
+4. callbacks: gives a function another function as an argument and invoking it
+when certain conditions are met (for example set interval or timeout)
+promises: built on top of callbacks a promise is a value that is "promised" to be available
+in the future. it has three states, rejected, resolved and pending 
+async and await: built on top of promises, making a function async tells it to always
+return a promise, even if it is not directly declared as a promise it will automatically
+convert to one. you can use the await keyword within the function to pause the execution of the function
+while waiting for some processes that take time like http requests, reading files and so..
+its non blocking since it doesnt block the stack and let other code run while it awaits
+
+
+5. js is single threaded, meaning it can only run one chunk of code at a time. but there are ways to async operations via
+the thingies i mentioned above which use something called web api, which is a tool provided by the browser.
+when certain processes are being called, like settimeout or interval they are being pushed to the 
+web api and once ready - onto the task queue. The event loop continuously checks the task queue and the stack. if the stack is empty,
+it pushes the first task on the task queue to it. the event loop is necessary for asyncronous programming.
+
+6. hello
+hello
+firsttimeout
+firstimmediate
+
+even tho the first timeout is set to 0 ms, it still goes to the web appi and than the task queue,
+abd meanwhile the code keeps running and so the stack isnt empty and the second hello
+will be printed. same goes for the immediate which executes after the first loop of the event loop is over, 
+which is still after hello and the set interval are printed
+
+7. a 
+
+10. first: 1 second in ms. (hello is the time in ms when the code was executed, and then, after a second,
+the current time in ms minus the time in ms 1 second ago).
+second: waits another 2 seconds then subtracting the current time in ms from the hello variable 
+again which would result in printing 3000 seconds.
+
+11. the code itself is fine, itll add the p to the div but danni ran the file itself instead of opening a server
+hell get something like dom not found cause hes trying to load to a window.onload on a window that doesnt exist
+
+
+13. you should use event emitter when handling user i/o, would like to ctreate custom events or use 
+it to handle http requests (trigger the event when the request returns a response) for async programming
+
+14. not sure what you meant here:
+a. module.exports - create a file of your own with a behavior
+ and export it to another scrupt within your project via the require(path to file)
+
+b. npm libraries and modules, install exterior modules from npm
+
+c. built in modules like event emitter ad first
+
+15. stream is the process of transfering a large amount of data in small chunks continuously over time
+
+16. a child process is a subprocess of another process that acts indepandently of the parent process.
+it is used for several things like parallel executions, running exterior programs or shell commands.
+you communicate with a child process data stream stdout, err, in or with messaging events with on and send.
+there are 4 ways to create a child process: exec, execFile, fork, spawn
+exec: used for small shell commands.
+execFile: executes a fule or a script without invoking the shell
+fork: creates a copy of the parent process as an indepandent nodejs process with its own even loop.
+spawn: creates a new process without invoking the shell, used to execute long running processes and large amount of data.
