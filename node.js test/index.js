@@ -8,6 +8,6 @@ const readFileAsync = async (path) => {
 //8
 const { division, multiplication, addition, subtraction } = require('./math.js');
 const result = division(8, 0);
-if (result) { console.log(result) };
+if (result) { console.log(result) } ;
 
 
