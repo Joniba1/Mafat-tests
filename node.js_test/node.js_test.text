@@ -55,13 +55,8 @@ he'll get something like dom not found cause hes trying to load to a window.onlo
 13. you should use event emitter when handling user i/o, would like to ctreate custom events or use 
 it to handle http requests (trigger the event when the request returns a response) for async programming
 
-14. not sure what you meant here:
-a. module.exports - create a file of your own with a behavior
- and export it to another scrupt within your project via the require(path to file)
-
-b. npm libraries and modules, install exterior modules from npm
-
-c. built in modules like event emitter ad first
+14. common js: uses require and module exports, support only named exports, modules are load syncronously
+    ESM: uses import and export, modules are load asyncronously, supportsnamed and default exports
 
 15. stream is the process of transfering a large amount of data in small chunks continuously over time
 
