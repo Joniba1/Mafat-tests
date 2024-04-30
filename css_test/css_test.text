@@ -43,5 +43,5 @@ yellow
 red
 
 19. yellow, in css whichever selector is more specific takes priority but since both 
-html and body have the same specifity whichever typed before will have less priority 
-making the html selector takes over
+html and body have the same specifity the first one will have less priority 
+thus making the html selector the winner
