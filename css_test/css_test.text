@@ -1,0 +1,47 @@
+1. c
+
+2. callbacks
+
+3. a
+
+4. c
+
+5. a
+
+6. div h3
+
+7. a[lang]
+
+8. a
+
+9. 
+    1. a
+    2. c
+    3. c
+    4. a
+
+10. b
+
+11.font-size
+
+12. dotted yellow
+
+16. 
+    1. c
+    2. f
+    3. f
+    4. a (p~ span, div or something, cant leave that empty)
+    5. f
+    6. e (all of p)
+
+17. selects the first next specified element p + div for example, only the first div will be affected
+
+18.green
+yellow
+yellow
+yellow
+red
+
+19. yellow, in css whichever selector is more specific takes priority but since both 
+html and body have the same specifity whichever typed before will have less priority 
+making the html selector takes over
