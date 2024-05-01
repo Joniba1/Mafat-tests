@@ -75,9 +75,9 @@ const foo12 = (option) => {
 
 //13: i see no issue so yes
 
-//14: the browser's version important for performance, js features support, security and the likes of those.
-//you can make your code compatiable to ensure it would work in different versions or browsers
-//use automate test tools to identify compatabillity, regular tests and modification of your code are the way to go here, i think
+//14: the browser's version is determines performance, js features support, security and the likes of those.
+//you can make your code compatible to ensure it would work in different versions or browsers.
+//use auto test tools to identify compatibility, regular tests and modification of your code are the way to go here, i think
 
 //15:
 function google() {
