@@ -10,7 +10,8 @@
 
 10. b
 
-11. the error would be not found because u cant specify a directory as an img 
+11. the error would be not found because he specified a folder, he didnt specify the exact route
+so the program wont find it 
 
 13. non of the sentences are correct, maybe the hebrew messed with the direction of the 
 words and you meant to write that h1 is bigger than h6 not vice versa
@@ -21,11 +22,11 @@ words and you meant to write that h1 is bigger than h6 not vice versa
 
 16.  its not valid, the openings and closings are misplaced.
 
-17. again, it works but it isnt valid. you should close your elements.
+17. isnt valid, you cant leave p element open
 
-18. the syntax is incorrect but if you used ~p then -assuming you correct the syntax- that would also be pink
+18. black
 
-19. b
+19. the code isnt valid, but it would be pink cause the browser interprets it correctly 
 
 20. sup (superscript)
 
