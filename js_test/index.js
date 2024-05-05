@@ -34,16 +34,16 @@ const foo2 = () => {
 
 //3
 let arr = [1, 2, 3, 4, 5]
-const squareArr = (array) => { return array.map(value => value * value) };
+const squareArr = (array) => array.map(value => value * value);
 arr = squareArr(arr);
 // console.log(arr);
 
 
 //4
 let stringArr = ['a', 'b', 'hga'];
-const stringsIncludeA = (array) => { return array.filter(value => value.includes('a')) };
+const stringsIncludeA = (array) => array.filter(value => value.includes('a'));
 stringArr = stringsIncludeA(stringArr);
-// onsole.log(stringArr);
+// console.log(stringArr);
 
 
 //5
@@ -54,7 +54,7 @@ stringArr = stringsIncludeA(stringArr);
 
 /*
 7:
-car has a global scope meaning you can access it before its declared unlike 
+var has a global scope meaning you can access it before its declared unlike 
 const and let who are only accessiable within the function or statement the were declared in
 var can be redeclared, let can only be changed, const is a constant - it cannot be modified
 */
@@ -64,6 +64,8 @@ var can be redeclared, let can only be changed, const is a constant - it cannot 
 //9: 0
 
 //10: false
+console.log(1 === 2 && "howdy")
+
 
 //11: howdy
 
@@ -81,7 +83,7 @@ const foo12 = (option) => {
 
 //15:
 function google() {
-    window.location.href = 'https://www.google.com';
+    window.location.replace = 'https://www.google.com';
 }
 
 
